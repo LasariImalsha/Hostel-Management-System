@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContext" prefHeight="1082.0" prefWidth="1919.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="1082.0" prefWidth="480.0" style="-fx-background-color: #726f6f;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="374.0" onAction="#manageRoomsOnAction" prefHeight="77.0" prefWidth="365.0" style="-fx-background-color: #183c72; -fx-background-radius: 100px;" text="Manage Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="470.0" onAction="#registerOnAction" prefHeight="77.0" prefWidth="365.0" style="-fx-background-color: #183c72; -fx-background-radius: 100px;" text="Register Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="561.0" onAction="#viewDetailsOnAction" prefHeight="77.0" prefWidth="365.0" style="-fx-background-color: #183c72; -fx-background-radius: 100px;" text="View Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="286.0" onAction="#manageStudentsOnAction" prefHeight="77.0" prefWidth="365.0" style="-fx-background-color: #183c72; -fx-background-radius: 100px;" text="Manage Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="42.0" layoutY="757.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="116.0" fitWidth="122.0" layoutX="67.0" layoutY="717.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/avatar.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="202.0" layoutY="750.0" prefHeight="49.0" prefWidth="186.0" text="Cordinator">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="54.0" layoutY="856.0" onAction="#logoutOnAction" prefHeight="49.0" prefWidth="176.0" style="-fx-background-color: red; -fx-background-radius: 100px;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="54.0" layoutY="955.0" text="Version 1.0.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addContext" layoutX="480.0" prefHeight="1082.0" prefWidth="1439.0" />
+   </children>
+</AnchorPane>

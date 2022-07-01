@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1439.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+   <children>
+      <Label layoutX="77.0" layoutY="57.0" text="Student Registration">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Separator layoutX="77.0" layoutY="111.0" prefHeight="0.0" prefWidth="253.0" style="-fx-background-color: black;" />
+      <Label layoutX="798.0" layoutY="60.0" text="Date  :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="875.0" layoutY="60.0" text="YYYY : MM : DD">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="1108.0" layoutY="60.0" text="Time  :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1187.0" layoutY="60.0" text="HH : MM : SS">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="189.0" prefHeight="34.0" prefWidth="182.0" text="Registration Id :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDetailId" layoutX="252.0" layoutY="189.0" prefHeight="34.0" prefWidth="182.0" text="Register Id">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="272.0" text="Student ID     :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="332.0" text="Name             :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="405.0" text="Date Of Birth  :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="467.0" text="NIC                 :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="272.0" text="Address    :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="421.0" text="Email         :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="341.0" text="Phone No  :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="252.0" layoutY="323.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="252.0" layoutY="396.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtDOB" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="252.0" layoutY="467.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtNIC" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="859.0" layoutY="263.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="7.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="864.0" layoutY="411.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="860.0" layoutY="338.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtPhnNo" layoutX="5.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children></AnchorPane>
+      <Label layoutX="77.0" layoutY="599.0" text="Room ID         :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbRoomID" layoutX="252.0" layoutY="574.0" prefHeight="50.0" prefWidth="283.0" />
+      <Label layoutX="712.0" layoutY="599.0" text="Room type  :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="864.0" layoutY="590.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtRoomTyp" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="77.0" layoutY="683.0" text="Duration         :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="716.0" layoutY="683.0" text="Key Money :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="252.0" layoutY="674.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtDuration" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="864.0" layoutY="683.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtKeyMoney" layoutX="4.0" layoutY="5.0" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="251.0" layoutY="253.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: White;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtStuId" layoutX="4.0" layoutY="5.0" onAction="#searchOnAction" prefHeight="40.0" prefWidth="276.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="841.0" layoutY="797.0" onAction="#registerOnAction" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #2c1c75; -fx-background-radius: 100px;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

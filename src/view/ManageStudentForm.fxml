@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1082.0" prefWidth="1439.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageStudentFormController">
+   <children>
+      <Label layoutX="62.0" layoutY="66.0" text="Manage Students" textFill="#111111">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="62.0" layoutY="120.0" prefHeight="2.0" prefWidth="217.0" style="-fx-background-color: Black;" />
+      <Label layoutX="62.0" layoutY="194.0" prefHeight="31.0" prefWidth="144.0" text="Student ID      :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="260.0" prefHeight="31.0" prefWidth="144.0" text="Name             :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="328.0" prefHeight="31.0" prefWidth="144.0" text="Date of Birth   :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="405.0" prefHeight="31.0" prefWidth="137.0" text="NIC                 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="237.0" layoutY="182.0" prefHeight="56.0" prefWidth="303.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtStuId" layoutX="11.0" layoutY="8.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="241.0" layoutY="250.0" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="8.0" layoutY="11.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="241.0" layoutY="319.0" prefHeight="40.0" prefWidth="241.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtBirthDate" layoutX="8.0" layoutY="11.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="241.0" layoutY="386.0" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtNic" layoutX="7.0" layoutY="8.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="697.0" layoutY="194.0" prefHeight="31.0" prefWidth="154.0" text="Address             :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="261.0" prefHeight="31.0" prefWidth="154.0" text="Phone Number  :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="329.0" prefHeight="31.0" prefWidth="154.0" text="Email                 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="872.0" layoutY="184.0" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="7.0" layoutY="8.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="872.0" layoutY="251.0" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtPhoneNumber" layoutX="8.0" layoutY="11.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="872.0" layoutY="319.0" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="textPane" stylesheets="@../asset/style/DetailForm.css">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="8.0" layoutY="11.0" prefHeight="40.0" prefWidth="282.0" styleClass="textField" stylesheets="@../asset/style/DetailForm.css" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="872.0" layoutY="387.0" onAction="#UpdateOnAction" prefHeight="51.0" prefWidth="290.0" style="-fx-background-color: black; -fx-background-radius: 100px;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblStudent" layoutX="63.0" layoutY="522.0" prefHeight="507.0" prefWidth="1329.0" stylesheets="@../asset/style/TableForm.css">
+        <columns>
+          <TableColumn fx:id="colStuId" prefWidth="154.00003051757812" text="Student ID" />
+          <TableColumn fx:id="colName" minWidth="0.0" prefWidth="240.0" text="Name" />
+            <TableColumn fx:id="colDOB" minWidth="0.0" prefWidth="181.0" text="Date of Birth" />
+            <TableColumn fx:id="colNIC" minWidth="0.0" prefWidth="180.0" text="NIC" />
+            <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="172.0" text="Address" />
+            <TableColumn fx:id="colPhnNumber" minWidth="0.0" prefWidth="155.0" text="Phone Number" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="245.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

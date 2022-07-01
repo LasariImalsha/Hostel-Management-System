@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1082.0" prefWidth="1439.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewDetailsFormController">
+   <children>
+      <Label layoutX="78.0" layoutY="73.0" text="View Details">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="78.0" layoutY="125.0" prefHeight="3.0" prefWidth="151.0" style="-fx-background-color: black;" />
+      <TableView fx:id="tblDetail" layoutX="72.0" layoutY="188.0" prefHeight="822.0" prefWidth="1294.0" stylesheets="@../asset/style/TableForm.css">
+        <columns>
+          <TableColumn fx:id="colDetailId" prefWidth="314.0000305175781" text="Detail ID" />
+          <TableColumn fx:id="colStuDetail" minWidth="0.0" prefWidth="339.0" text="Student Detail" />
+            <TableColumn fx:id="colPayDetail" minWidth="0.0" prefWidth="332.0" text="Payment Detail" />
+            <TableColumn fx:id="colRegisterDate" minWidth="0.0" prefWidth="311.0" text="Date of Registered" />
+        </columns>
+      </TableView>
+      <Label layoutX="709.0" layoutY="73.0" prefHeight="40.0" prefWidth="92.0" text="Date  :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="801.0" layoutY="73.0" prefHeight="3.0" prefWidth="206.0" text="YYYY : MM : DD">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="1071.0" layoutY="73.0" prefHeight="40.0" prefWidth="92.0" text="Time  :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1160.0" layoutY="73.0" prefHeight="3.0" prefWidth="206.0" text="HH : MM : SS ">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
